@@ -15,7 +15,7 @@ cp .env.example .env
  
 ### for running server and the database container
 ```
-docker-compose up
+docker-compose up -d
 
 ```
  ### for creating table
