@@ -1,0 +1,15 @@
+
+services:
+ server:
+  container_name: 'node-server'
+  build: .
+  ports:
+   - '8000:8000'
+ db:
+  image: 'postgres'
+  container_name: 'postgres-server'
+  environment:
+   POSTGRES_PASSWORD: '123456'
+   POSTGRES_DB: 'bitespeed'
+   
+   
