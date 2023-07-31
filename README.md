@@ -7,6 +7,12 @@
 git clone https://github.com/nabadeep25/identity-reconciliation.git
 
 ```
+
+### go to the project folder
+```
+cd identity-reconciliation/
+
+```
 ### create .env file from .env.example
 ```
 cp .env.example .env
