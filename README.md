@@ -34,9 +34,35 @@ docker-compose up -d
  docker exec node-server npm run seed
 
  ```
+### Sample data inserted by above command
+```
+      {
+        email: "lorraine@hillvalley.edu",
+        phoneNumber: "123456",
+        linkPrecedence: "primary",
+        createdAt: "2023-04-01 00:00:00.374+00",
+        updatedAt: "2023-04-01 00:00:00.374+00",
+      }
+
+      {
+        email: "mcfly@hillvalley.edu",
+        phoneNumber: "123456",
+        linkPrecedence: "secondary",
+        linkedId: 1,
+        createdAt: "2023-04-20 05:30:00.11+00",
+        updatedAt: "2023-04-20 05:30:00.11+00",
+      }
+```
 ## information
 ### PORT=8000
 ### API Endpoint :
 ```
-localhost:8000/identify
+POST localhost:8000/identify
+```
+### API Request body
+```
+{
+"email":"mcfly@hillvalley.edu",
+"phoneNumber":"123456"
+}
 ```
