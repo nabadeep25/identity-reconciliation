@@ -34,7 +34,16 @@ docker-compose up -d
  docker exec node-server npm run seed
 
  ```
-### Sample data inserted by above command
+### make POST request to localhost:8000/identify
+```
+sample POST request body
+{
+"email":"mcfly@hillvalley.edu",
+"phoneNumber":"123456"
+}
+```
+## information
+### Sample data inserted by above seed command
 ```
       {
         email: "lorraine@hillvalley.edu",
@@ -53,7 +62,6 @@ docker-compose up -d
         updatedAt: "2023-04-20 05:30:00.11+00",
       }
 ```
-## information
 ### PORT=8000
 ### API Endpoint :
 ```
